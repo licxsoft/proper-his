@@ -1,0 +1,5 @@
+rootProject.name = 'proper-his'
+
+include 'core'
+include 'security'
+include 'app'
