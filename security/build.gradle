@@ -2,10 +2,6 @@ jar {
     baseName = 'proper-his-security'
 }
 
-dependencyManagement {
-    imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
-}
-
 dependencies {
     compile project(':core')
 }
