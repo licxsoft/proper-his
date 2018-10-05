@@ -2,11 +2,18 @@ plugins {
     id "io.spring.dependency-management" version "1.0.5.RELEASE"
 }
 
+apply plugin: 'war'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 bootJar {
     baseName = 'proper-his-app'
+    version = ''
+}
+
+bootWar {
+    baseName = 'his'
+    version = ''
 }
 
 dependencies {
