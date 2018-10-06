@@ -21,6 +21,9 @@ allprojects {
 
 subprojects {
     repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/central'
+        }
         mavenCentral()
     }
 
@@ -29,10 +32,12 @@ subprojects {
     dependencyManagement {
         imports { mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}") }
     }
-    
+
     dependencies {
         compile('org.springframework.boot:spring-boot-starter-web')
         compile('org.springframework.boot:spring-boot-starter-actuator')
+        compile('com.github.noraui:ojdbc7:12.1.0.2')
+        compile('org.mybatis.spring.boot:mybatis-spring-boot-starter:1.3.2')
         testCompile('org.springframework.boot:spring-boot-starter-test')
     }
 }
