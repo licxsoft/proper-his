@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = "com.proper.his")
-@MapperScan("com.proper.his.core.mapper")
+@MapperScan("com.proper.his.**.mapper")
 public class HisApplication {
 
     public static void main(String[] args) {

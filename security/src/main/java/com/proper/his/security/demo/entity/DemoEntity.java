@@ -1,24 +1,18 @@
-package com.proper.his.core;
+package com.proper.his.security.demo.entity;
+
+import com.proper.his.core.database.base.BaseEntity;
 
 import java.io.Serializable;
 
-public class TestEntity implements Serializable {
+public class DemoEntity extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = -1L;
-
-    private String id;
 
     private String name;
 
     private String password;
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
+    private String testType;
 
     public String getName() {
         return name;
@@ -34,5 +28,13 @@ public class TestEntity implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getTestType() {
+        return testType;
+    }
+
+    public void setTestType(String testType) {
+        this.testType = testType;
     }
 }
