@@ -1,5 +1,8 @@
 package com.proper.his.core.database.base;
 
+/**
+ * 实体类基类
+ */
 public class BaseEntity {
 
     private String id;
